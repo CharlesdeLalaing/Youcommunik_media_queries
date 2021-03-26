@@ -243,7 +243,7 @@
     #text-packages{
         width: 55%;
         color: white;
-        padding-top: 10px;
+        padding-top: 30px;
         padding-left: 28px;
     }
 
@@ -397,6 +397,199 @@
 
     .menu > div > img {
         height: 40px;
+    }
+
+    .menu > div {
+        margin: 8px; /*crée de l'espacement autour de cahque div*/
+        font-size: 10px;
+        text-align: center; /* permet d'aligner le text par rapport a sa div*/
+    }
+
+    .logo > img {
+        height: 50px;
+        margin-right: 30px;
+        align-items: center;
+    } 
+
+    .menu {
+        align-items: center;
+        text-align: center;
+    }
+    /*section packages*/
+
+    .packages{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(51, 77, 92);
+        height: 150px;
+    }
+
+    #logo-packages{
+        width: 30%;
+    }
+
+    #logo-packages>img{
+        height: 110px;
+        margin: 20px 25%;
+    }
+
+    #text-packages{
+        width: 55%;
+        color: white;
+        margin: auto;
+        margin-top: -20px;
+    }
+
+    #text-packages > .up{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    #text-packages > .down{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    /* section eclosion, evolution et envol */
+    .title-eclosion{
+        font-size: 15px;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title-eclosion>h1{
+        background-color: rgb(51, 77, 92);
+        padding: 10px 0px;
+        margin: 15px auto;
+        width: 30%;
+    }
+
+    .div-eclosion{
+        display: flex;
+    }
+
+    #eclosion{
+        width: 30%;
+    }
+
+    #eclosion >img{
+        height: 100px;
+        margin: 40px 10px;
+    }
+
+    #text-eclosion{
+        width: 100%;
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    /* section logo eclosion, evolution, envol */
+
+    .dispo-logo{
+        display: flex;
+        justify-content: space-around;
+        background-color: #eae3d6;
+    }
+
+    .pad{
+        padding: 20px 30px;
+    }
+
+    .dispo-logo>div{
+        font-size: 11px;
+        text-align: center;
+        font-weight: bold; 
+    }
+
+    .dispo-logo>div>img{
+        width: 60px;
+        margin: 5px 5px;
+    }
+
+    .dispo-logo-exception{
+        display: flex;
+        justify-content: space-around;
+        background-color: #eae3d6;
+        padding: 0px 90px;
+    }
+    
+    .padEvo{
+        padding: 20px 30px 0px;
+    }
+    
+    .dispo-logo-exception>div{
+        font-size: 11px;
+        text-align: center;
+        font-weight: bold; 
+    }
+    
+    .dispo-logo-exception>div>img{
+        padding: 0px 90px 0px;
+        width: 60px;
+    }
+
+    /* section footer */
+    .div-footer{
+        display: flex;
+        justify-content: space-around;
+        background-color: #393a3b;
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+
+    .div-footer>div>p{
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .div-footer>div>img{
+        width: 40px;
+        margin: 2px;
+    }
+
+    .cond{
+        width: 100%;
+        text-align: end;
+        background-color: #393a3b;
+        color: white;
+        font-weight: bolder;
+        padding-bottom: 20px;
+    }
+
+    .cond>p{
+        font-size: 12px;
+        margin-right: 15px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    body{
+        width: 100%;
+        margin: 0; /*création des marges du body */
+        font-family: 'Ubuntu', sans-serif;
+        box-shadow: 0px 0px 35px 1px rgb(172, 172, 172);
+        margin-top: -20px;
+    }
+    /*navbar*/
+    nav{
+        background-color: black;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex; /* mettre en ligne les elements de la partie droite de la navbar*/
+        color: white;
+        order: 10;
+    }
+
+    .menu > div > img {
+        height: 35px;
     }
 
     .menu > div {
